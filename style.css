@@ -55,22 +55,21 @@ header{
 .navigation-bar{
     list-style-type: none;
     margin: 0px;
-    padding:20px;
-    border-top: 1px dashed #db187d;
-    border-bottom: 1px dashed #db187d;
+    padding: 0px;
 }
 
 .navigation-bar li {
+    float: left;
     text-align: center;
-    display: inline-block;
-    padding: 0px 0px;
+    display: block;
+    padding: 20px 0px 70px 0px;
     text-decoration: none;
     font-weight: 600;
     color: #db187d;
 }
 
 .navigation-bar li:first-child {
-    padding-left:17px;
+    padding-left:97px;
 }
 
 .navigation-bar li:last-child {
@@ -78,31 +77,41 @@ header{
 }
 
 .navigation-bar a{
-    padding: 20px 36px;
+    display: block;
+    padding: 10px 26px;
     text-decoration: none; 
     color: #db187d;
     margin-right:10px;
 }
 
 .navigation-bar a.active{
-    padding: 20px 36px;
+    padding: 10px 26px;
     text-decoration: none; 
     color:white;
     background-color: #db187d;
+    border-radius: 50px;
 }
 
 .navigation-bar a:hover:not(.active){
     background-color: #f3c7cf;
     color: #db187d;
+    border-radius: 50px;
 }
 
 article{
     max-width: 800px;
     margin:auto;
     height: auto;
+    border-top: 1px dashed #f3c7cf;
+    border-bottom: 1px dashed #f3c7cf;
+    padding-bottom: 90px;
 }
 
-article p{
+.article-box h2{
+    padding-top:70px;
+}
+
+.article-box p{
     margin-top: 50px;
     line-height: 30px;
     text-align: justify;
@@ -111,7 +120,6 @@ article p{
 
 footer{
     background-color: #c5d9f1;
-    margin-top: 90px;
 }
 
 footer p{
