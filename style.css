@@ -18,7 +18,7 @@ p, li{
 }
 
 header{
-    margin-bottom: 70px;
+    margin-bottom: 0px;
 }
 
 .header-image{
@@ -52,6 +52,11 @@ header{
     color: #f3c7cf;
 }
 
+nav {
+    max-width: 800px;
+    margin:auto;
+}
+
 .navigation-bar{
     list-style-type: none;
     margin: 0px;
@@ -62,14 +67,14 @@ header{
     float: left;
     text-align: center;
     display: block;
-    padding: 20px 0px 70px 0px;
+    padding: 20px 0px 20px 0px;
     text-decoration: none;
     font-weight: 600;
     color: #db187d;
 }
 
 .navigation-bar li:first-child {
-    padding-left:97px;
+    padding-left:17px;
 }
 
 .navigation-bar li:last-child {
@@ -96,6 +101,10 @@ header{
     background-color: #f3c7cf;
     color: #db187d;
     border-radius: 50px;
+}
+
+.clearfix{
+    clear:both;
 }
 
 article{
