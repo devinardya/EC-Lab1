@@ -43,7 +43,7 @@ header{
 }
 
 .title-1{
-    color: #db187d;
+    color: rgb(173, 173, 173);
     margin-bottom: 0px;
 }
 
@@ -152,3 +152,75 @@ footer p{
 }
 
 /* ---- ABOUTME.HTML ---- */
+
+.about-block{
+    width: 100%;
+    margin-top: 90px;
+}
+
+.about-block img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.about-block h2{
+    margin-bottom: 70px;
+}
+
+.sidebar{
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-right: 7px; 
+}
+
+.sidebar-photo{
+    width: 70%;
+}
+.sidebar-photo img{
+    width: 100%;
+    height: auto;
+    border-radius: 200px;
+    margin-bottom: 30px;
+    border: 3px dotted #f3c7cf;
+    padding: 20px;
+}
+
+.sidebar h3{
+    text-align: left;
+    padding: 0px 20px 20px 0px;
+    margin:0;
+}
+
+.sidebar p{
+    text-align: left;
+    line-height: 25px;
+    padding-right: 20px;
+    margin:0px;
+    font-size: 12px;
+}
+
+.sidebar p:nth-child(5){
+    margin-bottom: 20px;
+}
+
+.main-bar{
+    float: left;
+    width: 69%;
+    height: auto;
+    border-left: 1px dashed #f3c7cf;
+}
+
+.main-bar p{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 25px;
+    padding-left: 20px;
+}
+
+.main-bar h3{
+    text-align: left;
+    padding: 0px 20px 7px 20px;
+    margin:0;
+}
