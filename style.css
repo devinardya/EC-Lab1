@@ -1,5 +1,3 @@
-
-
 #wrapper{
     max-width: 960px;
     margin: auto;
@@ -11,14 +9,15 @@ h1, h2, h3, h4, h5{
     text-align: center;
 }
 
-p, li{
+p, li, td, th{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #737373;
 }
 
 header{
-    margin-bottom: 0px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #f3c7cf;
 }
 
 .header-image{
@@ -27,54 +26,57 @@ header{
 }
 
 .header-block{
-    position: relative;
-    text-align: center;
+    position: relative;  
+    height: 391px;
 }
 
 .header-text-block{
     position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255,255,255,0.8);
-    padding: 30px 80px;
-    border: 3px solid #f3c7cf;
-    box-shadow: 8px 0px 30px -10px #c9c9c9;
+    top: 35%;
+    right:5%;
 }
 
 .title-1{
-    color: rgb(173, 173, 173);
+    color: rgb(120, 120, 120);
     margin-bottom: 0px;
+    text-align: right;
 }
 
 .title-2{
     margin-top: 0px;
-    color: #f3c7cf;
+    color: rgb(232, 63, 176);
+    text-align: right;
 }
 
 nav {
     max-width: 800px;
     margin:auto;
+    padding-top: 10px;
+    position: absolute;
+    top:0;
+    right: 4%;
 }
 
 .navigation-bar{
+    width: 100%;
     list-style-type: none;
-    margin: 0px;
     padding: 0px;
+    height: 70px;
 }
 
 .navigation-bar li {
-    float: left;
     text-align: center;
-    display: block;
-    padding: 20px 0px 20px 0px;
+    display: inline-block;
+    float: left;
     text-decoration: none;
     font-weight: 600;
     color: #db187d;
+    box-sizing: border-box;
+    
 }
 
 .navigation-bar li:first-child {
-    padding-left:17px;
+    padding-left:3px;
 }
 
 .navigation-bar li:last-child {
@@ -82,25 +84,25 @@ nav {
 }
 
 .navigation-bar a{
-    display: block;
-    padding: 10px 26px;
+    padding: 10px 10px;
     text-decoration: none; 
-    color: #db187d;
-    margin-right:10px;
+    color: #404040;
+    margin: 0px 5px;
+    font-size: 10px;
 }
 
 .navigation-bar a.active{
-    padding: 10px 26px;
+    padding: 5px 24px;
     text-decoration: none; 
     color:white;
     background-color: #db187d;
     border-radius: 50px;
+    box-shadow: -1px 2px 14px 1px rgba(0,0,0,0.12);
 }
 
 .navigation-bar a:hover:not(.active){
-    background-color: #f3c7cf;
     color: #db187d;
-    border-radius: 50px;
+    text-shadow: -1px 2px 14px #737373;
 }
 
 .clearfix{
@@ -110,14 +112,17 @@ nav {
 article{
     max-width: 800px;
     margin:auto;
-    height: auto;
-    border-top: 1px dashed #f3c7cf;
+    height: auto;   
     border-bottom: 1px dashed #f3c7cf;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
 }
 
 .article-box h2{
     padding-top:70px;
+}
+
+.article-box h3{
+    margin-bottom: 0;
 }
 
 .article-box p{
@@ -128,7 +133,7 @@ article{
 }
 
 footer{
-    background-color: #c5d9f1;
+    background-color: white;
 }
 
 footer p{
@@ -172,7 +177,8 @@ footer p{
     float: left;
     width: 30%;
     height: auto;
-    margin-right: 7px; 
+    padding: 0px 7px 0px 20px;
+    box-sizing: border-box;
 }
 
 .sidebar-photo{
@@ -207,9 +213,12 @@ footer p{
 
 .main-bar{
     float: left;
-    width: 69%;
+    width: 70%;
     height: auto;
     border-left: 1px dashed #f3c7cf;
+    box-sizing: border-box;
+    padding-right: 20px;
+    margin-bottom: 30px;
 }
 
 .main-bar p{
@@ -224,3 +233,41 @@ footer p{
     padding: 0px 20px 7px 20px;
     margin:0;
 }
+
+/* MOVIES */
+
+.checked {
+  color: orange;
+}
+
+table{
+    border: 2px dotted #f3c7cf;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table th, td{
+    padding: 20px 40px 20px 20px;
+    text-align: left;
+    border-bottom: 2px dotted #f3c7cf;
+    border-right: 2px dotted #f3c7cf;
+}
+
+table th{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+table td:nth-child(1){
+    padding-right: 60px;
+}
+
+table td:nth-child(4){
+    padding-right: 60px;
+}
+
+table tr:nth-child(even){
+    background-color: #ebebeb;
+}
+
+
