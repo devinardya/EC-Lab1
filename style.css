@@ -9,10 +9,12 @@ h1, h2, h3, h4, h5{
     text-align: center;
 }
 
-p, li, td, th{
+p, li, td, th, ol{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #737373;
+    margin:0;
+    padding:0;
 }
 
 header{
@@ -20,32 +22,29 @@ header{
     border-bottom: 1px dashed #f3c7cf;
 }
 
-.header-image{
-    width: 100%;
-    height: auto;
-}
-
 .header-block{
-    position: relative;  
-    height: 391px;
+    position: relative; 
+    background: linear-gradient(360deg, rgba(255,5,126,0.5) 0%, rgba(173,0,121,0.5) , rgba(124,0,127,0.5) , rgba(80,0,133,0.5) ), url('images/sakura.jpg');
+    height: 350px;
+    background-size: cover;
 }
 
 .header-text-block{
     position: absolute;
-    top: 35%;
-    right:5%;
+    top: 33%;
+    left:35%;
 }
 
 .title-1{
-    color: rgb(120, 120, 120);
+    color: #fff;
     margin-bottom: 0px;
-    text-align: right;
+    text-align:center;
 }
 
-.title-2{
+.title-1.title-buttom{
     margin-top: 0px;
-    color: rgb(232, 63, 176);
-    text-align: right;
+    color: #fff;
+    text-align: center;
 }
 
 nav {
@@ -86,7 +85,7 @@ nav {
 .navigation-bar a{
     padding: 10px 10px;
     text-decoration: none; 
-    color: #404040;
+    color: #ffffff;
     margin: 0px 5px;
     font-size: 10px;
 }
@@ -101,7 +100,7 @@ nav {
 }
 
 .navigation-bar a:hover:not(.active){
-    color: #db187d;
+    color: #f3c7cf;
     text-shadow: -1px 2px 14px #737373;
 }
 
@@ -152,7 +151,7 @@ footer p{
 
 .article-box{
     max-width: 500px;
-    margin: auto;
+    margin: 0 auto;
     height: auto;
 }
 
@@ -236,8 +235,14 @@ footer p{
 
 /* MOVIES */
 
+.background-box{
+    background-color: #fff;
+    padding: 20px 20px;
+    box-shadow: -1px 2px 70px 1px rgba(0,0,0,0.12);
+}
+
 .checked {
-  color: orange;
+  color:  #db187d;
 }
 
 table{
@@ -247,7 +252,7 @@ table{
 }
 
 table th, td{
-    padding: 20px 40px 20px 20px;
+    padding: 20px 20px 20px 20px;
     text-align: left;
     border-bottom: 2px dotted #f3c7cf;
     border-right: 2px dotted #f3c7cf;
@@ -259,15 +264,58 @@ table th{
 }
 
 table td:nth-child(1){
-    padding-right: 60px;
+    padding-right: 40px;
 }
 
 table td:nth-child(4){
-    padding-right: 60px;
+    padding-right: 80px;
 }
 
 table tr:nth-child(even){
-    background-color: #ebebeb;
+    background-color: #ffebf1;
+}
+
+table tr:nth-child(odd){
+    background-color: #fff;
+}
+
+
+/* LINKS */
+
+.background-box.links{
+    width: 300px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.background-box.links ul{
+    border: 2px dotted #f3c7cf;
+}
+
+.background-box.links li{
+    color: #db187d;
+    font-size:20px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.background-box.links li li{
+    font-size:14px;
+    color: #737373;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.background-box.links li li a{
+    color: #737373;
+    text-decoration: none;
+}
+
+.background-box.links li li a:hover{
+    color: #db187d;
+    text-decoration: none;
+    font-size:14px;
 }
 
 
