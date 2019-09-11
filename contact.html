@@ -34,6 +34,28 @@
                     <h2>Kontakta Mig</h2>   
                 </div>
                 <div class="background-box contact">
+                   <form>
+                        <fieldset>
+                            <label for="namn">Namn : </label>
+                                <input type="text" name="namn" id="namn" placeholder="ditt namn" required>
+                            
+                            <label for="email">Email : </label>
+                                <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="email address" required>
+                        
+                            <label for="subject">Ämne :</label>
+                                <select required>
+                                    <option value=" ">--Välj en--</option>
+                                    <option value="about_website">Om Hemsida</option>
+                                    <option value="personal_message">Personal Meddelande</option>
+                                    <option value="collaboration">Samarbete</option>
+                                </select>
+                          
+                            <label for="Message" >Meddelande : </label>
+                            <textarea required>Skriv dina meddelande här...</textarea>
+                             <br>
+                            <button type="submit">Skicka</button>
+                        </fieldset>
+                    </form>
                 </div>
             </article>
             <footer>
