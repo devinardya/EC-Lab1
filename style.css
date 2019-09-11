@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5{
     padding:0;
 }
 
-p, li, td, th, ol, form, div{
+p, li, td, th, ol, form, div, ul{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: #737373;
@@ -22,6 +22,12 @@ p, li, td, th, ol, form, div{
 hr{
     color: #fff;
     border-style:dashed;
+}
+
+.material-icons{
+    color: #db187d;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px #e3e3e3;
 }
 
 header{
@@ -48,6 +54,7 @@ header{
     color: #fff;
     margin-bottom: 0px;
     text-align:center;
+    font-weight: 400;
 }
 
 .title-1.title-buttom{
@@ -59,10 +66,10 @@ header{
 nav {
     max-width: 800px;
     margin:auto;
-    padding-top: 10px;
+    padding-top: 0px;
     position: absolute;
-    top:0;
-    right: 4%;
+    top:4%;
+    right: 3%;
 }
 
 .navigation-bar{
@@ -80,7 +87,6 @@ nav {
     font-weight: 600;
     color: #db187d;
     box-sizing: border-box;
-    
 }
 
 .navigation-bar li:first-child {
@@ -92,10 +98,10 @@ nav {
 }
 
 .navigation-bar a{
-    padding: 10px 10px;
+    padding: 0px 10px 10px 10px;
     text-decoration: none; 
     color: #ffffff;
-    margin: 0px 5px;
+    margin: 0px 5px 5px 5px;
     font-size: 10px;
 }
 
@@ -112,6 +118,21 @@ nav {
     color: #f3c7cf;
     text-shadow: -1px 2px 14px #737373;
 }
+
+i.material-icons.link:hover:not(.active){
+    color: #f3c7cf;
+    text-shadow: -1px 2px 14px #737373;
+}
+
+.material-icons.link{
+    color: #fff;
+    font-size: 16px;
+    text-shadow: none;
+    position: relative;
+    top: 4px;
+    padding-right: 5px;
+}
+
 
 .clearfix{
     clear:both;
@@ -247,12 +268,6 @@ footer p{
 
 /* MOVIES */
 
-
-
-.checked {
-  color:  #db187d;
-}
-
 table{
     border: 2px dotted #f3c7cf;
     margin: 0 auto;
@@ -297,9 +312,13 @@ table tr:nth-child(odd){
     border-radius: 10px;
 }
 
-.background-box.links ul{
+.link-box{
     border: 2px dotted #f3c7cf;
-    padding-left:10px;
+    padding:0px 10px 10px 10px;
+}
+
+.background-box.links ul{
+    padding-left:0px;
 }
 
 .background-box.links hr{
@@ -314,7 +333,8 @@ table tr:nth-child(odd){
     text-decoration: none;
     font-weight: 600;
     list-style-type: none;
-    margin: 10px;
+    margin: 0px 10px 10px 10px;
+    padding-top: 20px;
 }
 
 .background-box.links li li{
@@ -322,6 +342,24 @@ table tr:nth-child(odd){
     color: #737373;
     margin: 0px;
     list-style-type: none;
+    padding-top: 0px;
+}
+
+.background-box.links li li:nth-child(2n){
+     background-color: #ffebf1;
+}
+
+.background-box.links li li li:nth-child(2n+1){
+     background-color: #fff;
+}
+
+.background-box.links li li li {
+    font-size:14px;
+    color: #c9c9c9;
+    padding-left: 25px;
+    list-style-type: none;
+    border: 0;
+     padding-top: 0px;
 }
 
 .background-box.links li li a{
@@ -356,6 +394,7 @@ input[type=text], input[type=email], select{
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #f8f8f8;
+    color: #737373;
 }
 
 button[type=submit] {
