@@ -1,5 +1,5 @@
 #wrapper{
-    max-width: 960px;
+    max-width: 1140px;
     margin: auto;
 }
 
@@ -42,7 +42,7 @@ header{
 .header-block{
     position: relative; 
     background: linear-gradient(360deg, rgba(255,5,126,0.5) 0%, rgba(173,0,121,0.5) , rgba(124,0,127,0.5) , rgba(80,0,133,0.5) ), url('images/sakura.jpg');
-    height: 350px;
+    height: 450px;
     text-align: center;
     background-size: cover;
 }
@@ -58,7 +58,6 @@ header{
     color: #fff;
     margin-bottom: 0px;
     text-align:center;
-    font-weight: 400;
 }
 
 .title-1.title-buttom{
